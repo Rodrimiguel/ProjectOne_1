@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './hijo.component.css'
 })
 export class HijoComponent {
+  //@input me permite recibir el atributo desde el componente padre
+  @Input("propiedadhijo") datohijo: any;
+
+  constructor() {
+    
+  }
+
 
 }

@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-//import { HijoComponent } from './componentes/hijo/hijo.component';
+import { HijoComponent } from './componentes/hijo/hijo.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule,],
+  imports: [RouterOutlet,CommonModule,HijoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
